@@ -1,0 +1,31 @@
+{
+    "name": "rds-buy运营链接生成",
+    "version": "1.0",
+    "description": "made by yinq",
+    "manifest_version": 2,
+    "minimum_chrome_version": "80",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "storage",
+        "https://rds-buy.aliyun.com/nextBuy/*"
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';",
+    "background": {
+        "scripts": ["js/background.js"],
+        "persistent": true
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "128": "icons/extension-icon.png"
+        }
+    },
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": true
+    },
+    "icons": {
+        "128": "icons/extension-icon.png"
+    }
+}

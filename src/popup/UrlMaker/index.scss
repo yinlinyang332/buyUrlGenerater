@@ -1,0 +1,26 @@
+.popup-page {
+    padding: 20px;
+    .item {
+        display: flex;
+        height: 32px;
+        line-height: 32px;
+    }
+
+    .item-label {
+        flex: 2;
+    }
+
+    .item-label__checkbox {
+        margin-right: 10px;
+    }
+
+    .item-content {
+        flex: 4;
+    }
+    .actions {
+       padding-top: 20px;
+       .actions-item {
+           margin-right: 20px;
+       }
+    }
+}
